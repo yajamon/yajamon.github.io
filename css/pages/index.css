@@ -2,4 +2,8 @@
      box-sizing: border-box;
 }
 
+body {
+    color: #111;
+    background-color: #EEE;
+}
 
