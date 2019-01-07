@@ -30,6 +30,9 @@ body {
 }
 
 .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 1em;
   text-align: center;
 }
