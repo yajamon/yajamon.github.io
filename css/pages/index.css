@@ -24,6 +24,10 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
+.navigation a:hover{
+  color: #99E;
+  text-decoration: underline;
+}
 
 .content {
   padding: 1em;
