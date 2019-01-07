@@ -36,3 +36,6 @@ body {
   padding: 1em;
   text-align: center;
 }
+.user-name {
+  font-weight: bold;
+}
