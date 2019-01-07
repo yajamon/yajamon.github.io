@@ -5,6 +5,7 @@
 body {
   color: #111;
   background-color: #EEE;
+  margin: 0;
 }
 
 .container {
@@ -13,6 +14,18 @@ body {
   align-items: center;
 }
 
+.navigation {
+  background-color: #111;
+  width: 100%;
+  padding: 1em;
+}
+.navigation a{
+  color: #EEE;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .content {
+  padding: 1em;
   text-align: center;
 }
