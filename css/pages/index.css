@@ -38,6 +38,10 @@ body {
   color: #99E;
   text-decoration: underline;
 }
+.navigation a img {
+  border-radius: 50%;
+  margin: 0 0.5ex;
+}
 
 .content {
   display: flex;
