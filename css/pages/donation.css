@@ -1,0 +1,24 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
+  text-align: center;
+}
+
+.content > div {
+  border: solid #111 1px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  margin: 1em;
+  padding: 1em;
+}
+
+.kyash {
+}
+
+.kyash > img {
+  max-width:200px;
+  max-height:200px;
+}
