@@ -4,3 +4,14 @@
   flex-wrap: wrap;
   padding: 1em;
 }
+
+.content > * {
+  max-width: 30em;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  border: solid #111 1px;
+  border-radius: 10px;
+  margin: 1ex;
+  padding: 1em;
+
+}
