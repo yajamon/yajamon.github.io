@@ -17,12 +17,15 @@ do
         cat << 'EOT'
       <nav class="navigation">
         <div class="to-root">
-          <a href="/" >
+          <a href="/index.html" >
             <img src="https://s.gravatar.com/avatar/6b05605bbb3b40e2f897d6347dd92b2d?s=40" />
             <span>Yajamon</span>
           </a>
         </div>
         <div class="stretch-space"></div>
+        <a href="/donation.html">
+          Donation
+        </a>
       </nav>
 EOT
         sed "1,${end}d" $target
