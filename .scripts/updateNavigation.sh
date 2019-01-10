@@ -23,6 +23,9 @@ do
           </a>
         </div>
         <div class="stretch-space"></div>
+        <a href="/works.html">
+          Works
+        </a>
         <a href="/donation.html">
           Donation
         </a>
