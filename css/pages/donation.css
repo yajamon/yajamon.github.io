@@ -5,6 +5,19 @@
   padding: 1em;
   text-align: center;
 }
-.user-name {
-  font-weight: bold;
+
+.content > div {
+  border: solid #111 1px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  padding: 1em;
+}
+
+.kyash {
+}
+
+.kyash > img {
+  max-width:200px;
+  max-height:200px;
 }
