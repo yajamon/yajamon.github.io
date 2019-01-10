@@ -10,7 +10,11 @@ target='index.html'
 first=$(grep '<nav' -n $target | cut -d':' -f1)
 end=$(grep '</nav' -n $target | cut -d':' -f1)
 
-sed "${first},${end}d" index.html | sed "${first}i\\"'
+tempFile=$(mktemp)
+
+{
+    sed "${first},\$d" index.html
+    cat << 'EOT'
       <nav class="navigation">
         <div class="to-root">
           <a href="/" >
@@ -20,4 +24,9 @@ sed "${first},${end}d" index.html | sed "${first}i\\"'
         </div>
         <div class="stretch-space"></div>
       </nav>
-'
+EOT
+    sed "1,${end}d" index.html
+} > $tempFile
+
+cp $tempFile index.html
+rm $tempFile
