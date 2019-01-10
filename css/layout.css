@@ -22,6 +22,9 @@ body {
   display: flex;
   flex-flow: row nowrap;
 }
+.navigation > * {
+  margin: 0 1ex;
+}
 .stretch-space {
   flex: auto;
 }
