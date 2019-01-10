@@ -5,16 +5,16 @@ readonly TARGETS=$(cd $ROOT; find . -name '.git' -prune -o -name '.script' -prun
 
 cd $ROOT
 
-target='index.html'
+for target in $TARGETS
+do
+    first=$(grep '<nav' -n $target | cut -d':' -f1)
+    end=$(grep '</nav' -n $target | cut -d':' -f1)
 
-first=$(grep '<nav' -n $target | cut -d':' -f1)
-end=$(grep '</nav' -n $target | cut -d':' -f1)
+    tempFile=$(mktemp)
 
-tempFile=$(mktemp)
-
-{
-    sed "${first},\$d" index.html
-    cat << 'EOT'
+    {
+        sed "${first},\$d" $target
+        cat << 'EOT'
       <nav class="navigation">
         <div class="to-root">
           <a href="/" >
@@ -25,8 +25,9 @@ tempFile=$(mktemp)
         <div class="stretch-space"></div>
       </nav>
 EOT
-    sed "1,${end}d" index.html
-} > $tempFile
+        sed "1,${end}d" $target
+    } > $tempFile
 
-cp $tempFile index.html
-rm $tempFile
+    cp $tempFile $target
+    rm $tempFile
+done
