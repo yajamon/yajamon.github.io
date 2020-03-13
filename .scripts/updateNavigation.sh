@@ -26,8 +26,8 @@ do
         <a href="/works.html">
           Works
         </a>
-        <a href="/donation.html">
-          Donation
+        <a href="/sponsoring.html">
+          Sponsoring
         </a>
       </nav>
 EOT
